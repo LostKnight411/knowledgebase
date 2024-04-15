@@ -34,7 +34,7 @@ const authProvider = isLocal
 	: AuthJsBackendAuthProvider({
 			authOptions: TinaAuthJSOptions({
 				databaseClient: databaseClient,
-				secret: process.env.NEXTAUTH_SECRET!,
+				secret: process.env.NEXTAUTH_SECRET,
 			}),
 		});
 
@@ -43,7 +43,7 @@ const tinaHandler = TinaNodeBackend({
 	databaseClient,
 });
 
-export default (req: any, res: any) => {
+export default (req, res) => {
 	// Modify the request here if you need to
 	return tinaHandler(req, res);
 };
