@@ -1,6 +1,9 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
+// import { rehypeHeadingIds } from "@astrojs/markdown-remark";
+// import rehypeAutolinkHeadings from "rehype-autolink-headings";
+
 import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
@@ -17,6 +20,9 @@ export default defineConfig({
 			social: {
 				github: "https://github.com/tgoHQ",
 				discord: "https://discord.gg/the-great-outdoors-345621611770282004",
+			},
+			components: {
+				Head: "./src/components/starlight/Head.astro",
 			},
 			sidebar: [
 				{
@@ -52,4 +58,11 @@ export default defineConfig({
 		}),
 	],
 	site: "https://starlight-lovat.vercel.app/",
+	markdown: {
+		// https://hideoo.dev/notes/starlight-heading-links
+		// rehypePlugins: [
+		// 	rehypeHeadingIds,
+		// 	[rehypeAutolinkHeadings, { behavior: "prepend" }],
+		// ],
+	},
 });
