@@ -15,7 +15,7 @@ export default defineConfig({
 			},
 			customCss: ["./src/tailwind.css"],
 			editLink: {
-				baseUrl: "https://github.com/tgoHQ/starlight/edit/main/",
+				baseUrl: "https://github.com/tgoHQ/knowledgebase/edit/main/",
 			},
 			social: {
 				github: "https://github.com/tgoHQ",
