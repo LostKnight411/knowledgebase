@@ -44,6 +44,10 @@ export default defineConfig({
 						{
 							label: "Lighterpack",
 							link: "https://lighterpack.com",
+							attrs: {
+								target: "_blank",
+								rel: "noopener",
+							},
 						},
 					],
 				},
