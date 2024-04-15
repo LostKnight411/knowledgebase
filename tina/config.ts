@@ -29,26 +29,39 @@ export default defineConfig({
 	schema: {
 		collections: [
 			{
-				name: "docs",
 				label: "Docs",
+				name: "docs",
 				path: "src/content/docs",
+				format: "mdx",
 				fields: [
 					{
-						type: "string",
-						name: "title",
 						label: "Title",
+						name: "title",
+						type: "string",
 						isTitle: true,
 						required: true,
 					},
 					{
-						type: "string",
-						name: "description",
 						label: "Description",
+						name: "description",
+						type: "string",
 					},
 					{
-						type: "rich-text",
-						name: "body",
+						label: "Sidebar",
+						name: "sidebar",
+						type: "object",
+						fields: [
+							{
+								label: "Badge",
+								name: "badge",
+								type: "string",
+							},
+						],
+					},
+					{
 						label: "Body",
+						name: "body",
+						type: "rich-text",
 						isBody: true,
 					},
 				],
