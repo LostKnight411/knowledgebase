@@ -1,11 +1,9 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-
-// import { rehypeHeadingIds } from "@astrojs/markdown-remark";
-// import rehypeAutolinkHeadings from "rehype-autolink-headings";
-
+import embeds from "astro-embed/integration";
 import tailwind from "@astrojs/tailwind";
-// import vercelServerless from "@astrojs/vercel/serverless";
+import metaTags from "astro-meta-tags";
+
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
@@ -52,7 +50,6 @@ export default defineConfig({
 						},
 					],
 				},
-
 				{
 					label: "Contributing",
 					autogenerate: {
@@ -65,17 +62,12 @@ export default defineConfig({
 		tailwind({
 			applyBaseStyles: false,
 		}),
+		metaTags(),
+		embeds(),
 	],
 	site: "https://starlight-lovat.vercel.app/",
 	prefetch: {
 		prefetchAll: true,
 		defaultStrategy: "load",
 	},
-	// markdown: {
-	// 	// https://hideoo.dev/notes/starlight-heading-links
-	// 	// rehypePlugins: [
-	// 	// 	rehypeHeadingIds,
-	// 	// 	[rehypeAutolinkHeadings, { behavior: "prepend" }],
-	// 	// ],
-	// },
 });

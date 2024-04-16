@@ -1,0 +1,29 @@
+---
+title: Article Features
+description: A guide to the styling features and components you can use
+---
+
+import Lighterpack from "@components/content/Lighterpack.astro";
+
+## Basics
+Start by reading the Starlight content guide:
+
+https://starlight.astro.build/guides/authoring-content/
+
+## Extra Features
+### YouTube
+Include a youtube link on its own line to embed the video:
+```mdx
+https://www.youtube.com/watch?v=RzL_L29cGmQ
+```
+https://www.youtube.com/watch?v=RzL_L29cGmQ
+
+### Lighterpack
+Use the Lighterpack component to embed a gear list:
+```js
+//We're embedding https://lighterpack.com/r/sl6c8y
+
+import Lighterpack from "@components/content/Lighterpack.astro";
+<Lighterpack slug="sl6c8y" />
+```
+<Lighterpack slug="sl6c8y" />
