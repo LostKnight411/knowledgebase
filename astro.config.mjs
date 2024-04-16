@@ -5,6 +5,7 @@ import starlight from "@astrojs/starlight";
 // import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
 import tailwind from "@astrojs/tailwind";
+// import vercelServerless from "@astrojs/vercel/serverless";
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
@@ -58,11 +59,13 @@ export default defineConfig({
 		}),
 	],
 	site: "https://starlight-lovat.vercel.app/",
-	markdown: {
-		// https://hideoo.dev/notes/starlight-heading-links
-		// rehypePlugins: [
-		// 	rehypeHeadingIds,
-		// 	[rehypeAutolinkHeadings, { behavior: "prepend" }],
-		// ],
-	},
+	// markdown: {
+	// 	// https://hideoo.dev/notes/starlight-heading-links
+	// 	// rehypePlugins: [
+	// 	// 	rehypeHeadingIds,
+	// 	// 	[rehypeAutolinkHeadings, { behavior: "prepend" }],
+	// 	// ],
+	// },
+	// output: "hybrid",
+	// adapter: vercelServerless(),
 });

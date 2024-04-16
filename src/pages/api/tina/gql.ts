@@ -1,3 +1,7 @@
+// import type { APIRoute } from "astro";
+
+// export const prerender = false;
+
 // // https://tina.io/docs/reference/self-hosted/tina-backend/vercel-functions/
 
 // import {
@@ -46,4 +50,13 @@
 // export default (req: any, res: any) => {
 // 	// Modify the request here if you need to
 // 	return tinaHandler(req, res);
+// };
+
+// export const POST: APIRoute = ({ request }) => {
+// 	return new Response(
+// 		JSON.stringify({
+// 			data: request.body,
+// 		}),
+// 		{ status: 200 }
+// 	);
 // };
