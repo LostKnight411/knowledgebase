@@ -8,7 +8,7 @@
 	"scripts": {
 		"dev": "tinacms dev --noTelemetry -c \"astro dev\"",
 		"start": "astro dev",
-		"build": "astro check && astro build",
+		"build": "tinacms build --noTelemetry && astro check && astro build",
 		"tina build": "tinacms build --noTelemetry && astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro"

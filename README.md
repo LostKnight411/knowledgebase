@@ -1,6 +1,9 @@
 # The Great Outdoors Knowledge Base
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/small.svg)](https://starlight.astro.build)
+
+![Discord](https://img.shields.io/discord/345621611770282004?style=for-the-badge&logo=discord&logoColor=white&label=Discord&labelColor=%23222&color=%23137c5a)
+
 
 ## 🚀 Project Structure
 

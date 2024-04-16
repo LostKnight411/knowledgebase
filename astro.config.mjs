@@ -18,8 +18,8 @@ export default defineConfig({
 				baseUrl: "https://github.com/tgoHQ/knowledgebase/edit/main/",
 			},
 			social: {
-				github: "https://github.com/tgoHQ",
 				discord: "https://discord.gg/the-great-outdoors-345621611770282004",
+				github: "https://github.com/tgoHQ",
 			},
 			components: {
 				Head: "./src/components/starlight/Head.astro",
