@@ -26,36 +26,16 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: "Guides",
+					label: "Start Here",
 					autogenerate: {
-						directory: "guides",
+						directory: "start",
 					},
-				},
-				{
-					label: "Reference",
-					autogenerate: {
-						directory: "reference",
-					},
-				},
-				{
-					label: "External Resources",
-					collapsed: true,
-					items: [
-						{
-							label: "Lighterpack",
-							link: "https://lighterpack.com",
-							attrs: {
-								target: "_blank",
-								rel: "noopener",
-							},
-						},
-					],
 				},
 				{
 					label: "Contributing",
+					collapsed: true,
 					autogenerate: {
-						collapsed: true,
-						directory: "contributing",
+						directory: "contribute",
 					},
 				},
 			],

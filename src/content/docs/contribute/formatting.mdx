@@ -5,6 +5,21 @@ description: A guide to the styling features and components you can use
 
 import Lighterpack from "@components/content/Lighterpack.astro";
 
+Articles are written using MDX. Each article is its own MDX file, which contains a metadata section and a content section.
+
+```mdx
+// src/content/docs/example.mdx
+
+---
+title: Example Article
+description: A simple demonstration of how articles are structured
+---
+
+{/* The content of the article goes here */}
+Welcome to the example article
+...
+```
+
 ## Basics
 Start by reading the Starlight content guide:
 
@@ -17,6 +32,14 @@ Include a youtube link on its own line to embed the video:
 https://www.youtube.com/watch?v=RzL_L29cGmQ
 ```
 https://www.youtube.com/watch?v=RzL_L29cGmQ
+
+### Link Previews
+Include any link on its own line to generate a link preview:
+```mdx
+https://discord.gg/the-great-outdoors-345621611770282004
+```
+
+https://discord.gg/the-great-outdoors-345621611770282004
 
 ### Lighterpack
 Use the Lighterpack component to embed a gear list:
