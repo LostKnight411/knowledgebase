@@ -1,14 +1,16 @@
 import { defineConfig } from "tinacms";
 
-// Your hosting provider likely exposes this as an environment variable
-const branch =
-	process.env.GITHUB_BRANCH ||
-	process.env.VERCEL_GIT_COMMIT_REF ||
-	process.env.HEAD ||
-	"main";
+// // Your hosting provider likely exposes this as an environment variable
+// const branch =
+// 	process.env.GITHUB_BRANCH ||
+// 	process.env.VERCEL_GIT_COMMIT_REF ||
+// 	process.env.HEAD ||
+// 	"main";
 
 export default defineConfig({
-	branch,
+	branch: "main",
+
+	clientId: process.env.TINA_CLIENT_ID!,
 
 	build: {
 		outputFolder: "admin",
@@ -49,6 +51,12 @@ export default defineConfig({
 							{
 								label: "Badge",
 								name: "badge",
+								type: "string",
+							},
+							{
+								label: "Label",
+								description: "The label to display in the sidebar",
+								name: "label",
 								type: "string",
 							},
 						],
