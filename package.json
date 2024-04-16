@@ -6,7 +6,7 @@
 	"repository": "https://github.com/tgoHQ/knowledgebase",
 	"bugs": "https://github.com/tgoHQ/knowledgebase/issues",
 	"scripts": {
-		"dev": "tinacms dev -c \"astro dev\"",
+		"dev": "tinacms dev --noTelemetry -c \"astro dev\"",
 		"start": "astro dev",
 		"build": "astro check && astro build",
 		"preview": "astro preview",

@@ -52,6 +52,14 @@ export default defineConfig({
 						},
 					],
 				},
+
+				{
+					label: "Contributing",
+					autogenerate: {
+						collapsed: true,
+						directory: "contributing",
+					},
+				},
 			],
 		}),
 		tailwind({
