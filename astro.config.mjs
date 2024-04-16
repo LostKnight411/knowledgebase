@@ -66,6 +66,4 @@ export default defineConfig({
 	// 	// 	[rehypeAutolinkHeadings, { behavior: "prepend" }],
 	// 	// ],
 	// },
-	// output: "hybrid",
-	// adapter: vercelServerless(),
 });
