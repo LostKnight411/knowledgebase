@@ -26,10 +26,8 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: "Start Here",
-					autogenerate: {
-						directory: "start",
-					},
+					label: "Home",
+					link: "/",
 				},
 				{
 					label: "Contributing",
