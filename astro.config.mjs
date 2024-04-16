@@ -67,6 +67,10 @@ export default defineConfig({
 		}),
 	],
 	site: "https://starlight-lovat.vercel.app/",
+	prefetch: {
+		prefetchAll: true,
+		defaultStrategy: "load",
+	},
 	// markdown: {
 	// 	// https://hideoo.dev/notes/starlight-heading-links
 	// 	// rehypePlugins: [
