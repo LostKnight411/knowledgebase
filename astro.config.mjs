@@ -3,6 +3,7 @@ import starlight from "@astrojs/starlight";
 import embeds from "astro-embed/integration";
 import tailwind from "@astrojs/tailwind";
 import metaTags from "astro-meta-tags";
+import starlightImageZoomPlugin from "starlight-image-zoom";
 
 // https://astro.build/config
 export default defineConfig({
@@ -58,6 +59,7 @@ export default defineConfig({
 					},
 				},
 			],
+			plugins: [starlightImageZoomPlugin()],
 		}),
 		tailwind({
 			applyBaseStyles: false,
