@@ -1,35 +1,38 @@
 ---
-title: "Home"
+title: 'Home'
 description: Your guide to camping, hiking, backpacking, and more.
 sidebar:
-  label: Home
+    label: Home
 tableOfContents: false
 hero:
-  title: The Great Outdoors
-  tagline: Your guide to camping, hiking, backpacking, and more.
-  image:
-    file: ../../assets/houston.webp
-  actions:
-    - text: Jump In
-      link: /start/contributing/markdown
-      icon: right-arrow
-      variant: primary
-    - text: Join the Discord
-      link: https://discord.gg/the-great-outdoors-345621611770282004
-      icon: discord
+    title: The Great Outdoors
+    tagline: Your guide to camping, hiking, backpacking, and more.
+    image:
+        file: ../../assets/houston.webp
+    actions:
+        - text: Jump In
+          link: /
+          icon: right-arrow
+          variant: primary
+        - text: Join the Discord
+          link: https://discord.gg/the-great-outdoors-345621611770282004
+          icon: discord
 banner:
-  content: This website is under construction. Help us out by <a href="/contribute/">contributing an article</a>!
+    content: This website is under construction. Help us out by <a href="/contribute/">contributing an article</a>!
 next: false
 ---
 
-import { Card, CardGrid } from "@astrojs/starlight/components";
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
 <CardGrid>
 	<Card title="Discord server" icon="discord">
-		[Join us on Discord](https://discord.gg/the-great-outdoors-345621611770282004) to chat with over 5000 members.
+		[Join us on
+		Discord](https://discord.gg/the-great-outdoors-345621611770282004) to
+		chat with over 5000 members.
 	</Card>
 	<Card title="Get involved" icon="pencil">
-		You are invited to create and edit articles on this site! Check out our [Contributor Guide](contribute).
+		You are invited to create and edit articles on this site! Check out our
+		[Contributor Guide](contribute).
 	</Card>
 	<Card title="Configure your site" icon="setting">
 		Edit your `sidebar` and other config in `astro.config.mjs`.
