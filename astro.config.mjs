@@ -11,7 +11,8 @@ export default defineConfig({
 		starlight({
 			title: "The Great Outdoors",
 			logo: {
-				src: "./src/assets/logo.svg",
+				src: "./src/assets/wordmark.svg",
+				replacesTitle: true,
 			},
 			customCss: ["./src/tailwind.css"],
 			editLink: {
@@ -31,7 +32,10 @@ export default defineConfig({
 				},
 				{
 					label: "Contributing",
-					collapsed: true,
+					badge: {
+						text: "New",
+						variant: "note"
+					},
 					autogenerate: {
 						directory: "contribute",
 					},

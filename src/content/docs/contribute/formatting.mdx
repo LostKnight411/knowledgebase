@@ -1,38 +1,61 @@
 ---
 title: Markup Features
 description: A guide to the styling features and components you can use
+sidebar:
+  order: 1
 ---
 
-import Lighterpack from '@components/content/Lighterpack.astro';
+## Article Structure
 
-Articles are written using MDX. Each article is its own MDX file, which contains a metadata section and a content section.
+Articles are written using MDX. Each article is its own `.mdx` file, which contains a metadata section and a content section:
 
-```mdx
-// src/content/docs/example.mdx
-
+```mdx title="src/content/docs/example.mdx"
 ---
-
 title: Example Article
-description: A simple demonstration of how articles are structured
-
+description: A demonstration of how articles are structured
 ---
 
-{/* The content of the article goes here */}
-Welcome to the example article
-...
+This is the content of the example article!
 ```
 
-## Basics
+Metadata about the article lives at the top of the file, between two sets of `---` tags. The Content of the article goes below the second `---` tag.
 
-Start by reading the Starlight content guide:
+## Metadata
+
+You can read the full metadata spec in the [Starlight documentation](https://starlight.astro.build/reference/frontmatter/).
+
+## Content
+
+The article content is written in MDX, which is an extension of Markdown. It's similar to the formatting you may be familiar with from Discord or Github.
+
+```mdx
+## This is heading level 2
+
+### Heading level 3
+
+**Here's some bold text**
+
+_italic_
+
+~~strikethrough~~
+
+this is some `inline code`
+
+-   a bulleted list
+    -   with sub-bullets
+```
+
+:::tip
+There are lots of other features available for you to use, such as numbered lists, masked links, embedded images, asides (like this "tip" callout), tables, block quotes, and more.
+:::
+
+For a complete list of available markup features, check out the Starlight documentation:
 
 https://starlight.astro.build/guides/authoring-content/
 
-## Extra Features
-
 ### YouTube
 
-Include a youtube link on its own line to embed the video:
+Include a YouTube link on its own line to embed a video player:
 
 ```mdx
 https://www.youtube.com/watch?v=RzL_L29cGmQ
@@ -50,15 +73,16 @@ https://discord.gg/the-great-outdoors-345621611770282004
 
 https://discord.gg/the-great-outdoors-345621611770282004
 
-### Lighterpack
+### Lighterpack Lists
 
-Use the Lighterpack component to embed a gear list:
+Use the `Lighterpack` component to embed a [Lighterpack](https://lighterpack.com) gear list. In this example, we're embedding the list `https://lighterpack.com/r/sl6c8y`. The last part of this url, called the "slug", gets passed to the `Lighterpack` component:
 
 ```js
-//We're embedding https://lighterpack.com/r/sl6c8y
-
 import Lighterpack from '@components/content/Lighterpack.astro';
+
 <Lighterpack slug="sl6c8y" />;
 ```
+
+import Lighterpack from '@components/content/Lighterpack.astro';
 
 <Lighterpack slug="sl6c8y" />
