@@ -3,7 +3,23 @@ prev: false
 title: Get Started with Contributing
 description: Learn how to get started with contributing.
 sidebar:
-  label: Getting Started
+    label: Getting Started
 ---
 
-Thank you for your interest in contributing to TGO Knowledge Base!
+Thank you for your interest in contributing to TGO Knowledge Base! We welcome contributions of any size and contributors of any experience level.
+
+## Project Structure
+
+This site is built on [Starlight](https://starlight.astro.build/), which is a documentation site framework for [Astro](https://astro.build/).
+
+Pages are written using `MDX` files, located in `src/content/docs`.
+
+import { FileTree } from '@astrojs/starlight/components';
+
+{/* prettier-ignore */}
+<FileTree>
+	- src/
+  - assets/ //static assets like images go in here
+    - content/
+    - docs/ //articles go in here
+</FileTree>
