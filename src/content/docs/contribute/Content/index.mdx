@@ -1,0 +1,31 @@
+---
+title: Creating and Editing Articles
+description: Documentation about the steps for creating and editing articles
+sidebar:
+    label: Editing Articles
+    order: 0
+---
+todo
+
+- editing articles
+- creating new
+    - list of article ideas
+    - location and name of file
+    - layout/flow of article
+    - link to markup and style guides
+- link to git guide
+
+## Article Structure
+
+Articles are written using MDX. Each article is its own `.mdx` file, which contains a metadata section and a content section:
+
+```mdx title="src/content/docs/example.mdx"
+---
+title: Example Article
+description: A demonstration of how articles are structured
+---
+
+This is the content of the example article!
+```
+
+Metadata about the article lives at the top of the file, between two sets of `---` tags. The content of the article goes below the second `---` tag.

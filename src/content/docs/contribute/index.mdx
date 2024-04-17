@@ -6,21 +6,35 @@ sidebar:
     label: Getting Started
     order: 0
 ---
+import {Icon} from "@astrojs/starlight/components"
 
-Thank you for your interest in contributing to TGO Knowledge Base! We welcome contributions of any size and contributors of any experience level.
 
-## Project Structure
+Thank you for your interest in contributing to TGO Knowledge Base! This is a community-driven project that accepts contributions of any size and contributors of all skillsets.
 
-This site is built on [Starlight](https://starlight.astro.build/), which is a documentation site framework for [Astro](https://astro.build/).
+:::tip
+Join us on our [Discord server](https://discord.gg/the-great-outdoors-345621611770282004), which has a section dedicated to developing this website. Discord is the main place we collaborate on ideas.
+:::
 
-Pages are written using `MDX` files, located in `src/content/docs`.
+## Ways to Help
 
-import { FileTree } from '@astrojs/starlight/components';
+There are many ways to contribute to the project. If you have an idea or skillset that's not listed here, we'd love to hear from you!
 
-{/* prettier-ignore */}
-<FileTree>
-	- src/
-  - assets/ //static assets like images go in here
-    - content/
-    - docs/ //articles go in here
-</FileTree>
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<Card title="Creating and editing articles" icon="pencil">
+	Help out by creating a new article or editing/expanding an existing one.
+
+  [Editing Articles](/contribute/content)
+</Card>
+<CardGrid>
+    <Card title="Translation" icon="translate">
+    	Make this site available to more people by translating content to other languages.
+
+		[Translation Guide](/contribute/translation)
+    </Card>
+    <Card title="Development" icon="puzzle">
+    	Add new functionality to the site by creating interactive tools and components.
+
+		[Extending and Development](/contribute/extending)
+    </Card>
+</CardGrid>

@@ -11,13 +11,10 @@ export default defineConfig({
 		starlight({
 			title: "The Great Outdoors",
 			logo: {
-				src: "./src/assets/wordmark.svg",
+				src: "./src/assets/brand/wordmark.svg",
 				replacesTitle: true,
 			},
 			customCss: ["./src/tailwind.css"],
-			editLink: {
-				baseUrl: "https://github.com/tgoHQ/knowledgebase/edit/main/",
-			},
 			social: {
 				discord: "https://discord.gg/the-great-outdoors-345621611770282004",
 				github: "https://github.com/tgoHQ",
