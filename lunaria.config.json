@@ -5,11 +5,11 @@
 		"hosting": "github"
 	},
 	"defaultLocale": { "label": "English", "lang": "en" },
-	"locales": [{ "label": "English", "lang": "en" }],
+	"locales": [{ "label": "French", "lang": "fr" }],
 	"files": [
 		{
-			"location": "src/content/docs/**/*.{mdx}",
-			"pattern": "src/content/docs/@lang/@path",
+			"location": "src/content/docs/**/*.{md,mdx}",
+			"pattern": "src/content/docs/@path",
 			"type": "universal"
 		}
 	],
