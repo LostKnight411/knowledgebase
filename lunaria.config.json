@@ -1,15 +1,30 @@
 {
 	"$schema": "./node_modules/@lunariajs/core/config.schema.json",
 	"repository": {
-		"name": "tgoHQ/knowledgebase"
+		"name": "tgoHQ/knowledgebase",
+		"hosting": "github"
 	},
 	"defaultLocale": { "label": "English", "lang": "en" },
-  "locales": [{"label": "English", "lang": "en"}],
+	"locales": [{ "label": "English", "lang": "en" }],
 	"files": [
 		{
 			"location": "src/content/docs/**/*.{md,mdx}",
 			"pattern": "src/content/docs/@lang/@path",
 			"type": "universal"
 		}
-	]
+	],
+	"dashboard": {
+		"favicon": {
+			"external": [
+				{
+					"link": "/favicon.svg",
+					"type": "image/svg"
+				}
+			]
+		},
+		"site": "https://starlight-lovat.vercel.app/lunaria",
+		"title": "Translation Status",
+		"description": "Localization status dashboard for TGO Knowledge Base"
+	},
+	"outDir": "./dist/translation"
 }
