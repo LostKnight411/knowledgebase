@@ -8,7 +8,7 @@
 	"locales": [{ "label": "English", "lang": "en" }],
 	"files": [
 		{
-			"location": "src/content/docs/**/*.{md,mdx}",
+			"location": "src/content/docs/**/*.{mdx}",
 			"pattern": "src/content/docs/@lang/@path",
 			"type": "universal"
 		}
