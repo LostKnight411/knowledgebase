@@ -2,6 +2,10 @@
 import { Image } from 'astro:assets';
 import imgReference from "@assets/discord-mark-blue.svg"
 
+const response = await fetch("https://discord.com/api/v9/invites/the-great-outdoors-345621611770282004?with_counts=true");
+const data = await response.json();
+const { approximate_member_count: members } = data;
+
 // todo hook this up to translations
 // https://github.com/withastro/docs/blob/main/src/components/StarlightBanner.astro
 ---
@@ -12,7 +16,7 @@ import imgReference from "@assets/discord-mark-blue.svg"
 			<h2>Join us on Discord</h2>
 		</a>
 		<p>
-			Chat with over 5000 members
+			Chat with {members} members
 		</p>
 	</div>
 	<div style="">
