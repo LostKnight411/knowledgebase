@@ -14,10 +14,16 @@ export default defineConfig({
 				src: "./src/assets/brand/wordmark.svg",
 				replacesTitle: true,
 			},
+			locales: {
+				root: {
+					label: "English",
+					lang: "en",
+				},
+			},
 			customCss: ["./src/tailwind.css"],
 			social: {
 				discord: "https://discord.gg/the-great-outdoors-345621611770282004",
-				github: "https://github.com/tgoHQ",
+				github: "https://github.com/tgoHQ/knowledgebase",
 			},
 			components: {
 				Head: "./src/components/starlight/Head.astro",
@@ -44,7 +50,8 @@ export default defineConfig({
 			applyBaseStyles: false,
 		}),
 		metaTags(),
-		embeds(),
+		// https://astro-embed.netlify.app/
+		embeds({services: ["YouTube", "LinkPreview"]}),
 	],
 	site: "https://starlight-lovat.vercel.app/",
 	prefetch: {

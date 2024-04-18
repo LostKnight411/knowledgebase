@@ -5,8 +5,18 @@ sidebar:
   label: Article Metadata
   order: 1
 ---
-todo
+Articles contain a block of metadata information called "frontmatter" a the top of the file.
 
-link to frontmatter reference
+```mdx title="src/content/docs/example.mdx"
+---
+title: Example Article
+description: A demonstration of how articles are structured
+---
 
-title, description, sidebar (label)
+This is the content of the example article!
+```
+The only required attribute is `title`.
+
+See the Starlight frontmatter reference for the full list of properties available:
+
+https://starlight.astro.build/reference/frontmatter/
