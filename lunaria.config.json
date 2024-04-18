@@ -17,13 +17,13 @@
 		"favicon": {
 			"external": [
 				{
-					"link": "/favicon.svg",
+					"link": "https://starlight-lovat.vercel.app/favicon.svg",
 					"type": "image/svg"
 				}
 			]
 		},
 		"site": "https://starlight-lovat.vercel.app/lunaria",
-		"title": "Translation Status",
+		"title": "Translation Status | The Great Outdoors",
 		"description": "Localization status dashboard for TGO Knowledge Base"
 	},
 	"outDir": "./dist/translation"
