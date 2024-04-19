@@ -3,7 +3,9 @@ import type { Props } from '@astrojs/starlight/props';
 import StarlightHead from '@astrojs/starlight/components/Head.astro';
 import VtbotStarlight from 'astro-vtbot/components/starlight/Base.astro';
 
-import { pwaInfo } from "virtual:pwa-info";
+import { pwaInfo } from 'virtual:pwa-info';
+// @ts-ignore
+import { pwaAssetsHead } from 'virtual:pwa-assets/head';
 ---
 
 <!-- https://events-3bg.pages.dev/jotter/starlight/guide/ -->
@@ -11,18 +13,15 @@ import { pwaInfo } from "virtual:pwa-info";
 	<StarlightHead {...Astro.props}><slot /></StarlightHead>
 </VtbotStarlight>
 
-<!-- https://astro-pwa-recipe.vercel.app/recipe/generate-sw -->
+<!-- https://vite-pwa-org.netlify.app/frameworks/astro.html -->
+<script src="/src/pwa.ts"></script>
 {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
-<script>
-	import { registerSW } from 'virtual:pwa-register';
-
-	registerSW({
-		immediate: true,
-		onRegisteredSW(swScriptUrl) {
-			console.log('SW registered: ', swScriptUrl);
-		},
-		onOfflineReady() {
-			console.log('PWA application ready to work offline');
-		},
-	});
-</script>
+{
+	pwaAssetsHead.themeColor && (
+		<meta name="theme-color" content={pwaAssetsHead.themeColor.content} />
+	)
+}
+{
+	// @ts-ignore
+	pwaAssetsHead.links.map((link) => <link {...link} />)
+}
