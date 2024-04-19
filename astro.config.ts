@@ -19,10 +19,7 @@ export default defineConfig({
 			includeAssets: ['favicon.svg'],
 			workbox: {
 				navigateFallback: '/404',
-				globPatterns: ['**/*.{css,js,html,svg,png,ico.txt}'],
-				"navigateFallbackDenylist": [
-					/^\/404/
-				]
+				globPatterns: ['**/^(?!404).*.{css,js,html,svg,png,ico.txt}'],
 			},
 			devOptions: {
 				enabled: true,
