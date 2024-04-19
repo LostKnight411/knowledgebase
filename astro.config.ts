@@ -20,6 +20,9 @@ export default defineConfig({
 			workbox: {
 				navigateFallback: '/404',
 				globPatterns: ['**/*.{css,js,html,svg,png,ico.txt}'],
+				"navigateFallbackDenylist": [
+					/^\/404/
+				]
 			},
 			devOptions: {
 				enabled: true,
