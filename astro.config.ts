@@ -15,14 +15,12 @@ export default defineConfig({
 	},
 	integrations: [
 		AstroPWA({
+			mode: "production",
 			registerType: 'autoUpdate',
 			includeAssets: ['favicon.svg'],
 			workbox: {
 				navigateFallback: '/404',
-				globPatterns: ['**/^(?!404).*.{css,js,html,svg,png,ico.txt}'],
-			},
-			devOptions: {
-				enabled: true,
+				globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,json}'],
 			},
 			experimental: {
 				directoryAndTrailingSlashHandler: true,
