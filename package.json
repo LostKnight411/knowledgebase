@@ -13,7 +13,8 @@
 		"astro": "astro",
 		"tina:build": "tinacms build --noTelemetry && astro check && astro build",
 		"lunaria:preview": "lunaria preview",
-		"lunaria:build": "lunaria build"
+		"lunaria:build": "lunaria build",
+		"generate-pwa-assets": "pwa-assets-generator --preset minimal public/favicon.svg"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.5.10",
@@ -25,6 +26,8 @@
 		"@lunariajs/core": "^0.0.32",
 		"@tinacms/cli": "^1.5.43",
 		"@types/node": "^20.12.7",
+		"@vite-pwa/assets-generator": "^0.2.4",
+		"@vite-pwa/astro": "^0.3.1",
 		"astro": "^4.3.5",
 		"astro-embed": "^0.7.1",
 		"astro-meta-tags": "^0.2.2",
@@ -33,6 +36,7 @@
 		"starlight-image-zoom": "^0.2.0",
 		"tailwindcss": "^3.4.3",
 		"tinacms": "^1.6.1",
-		"typescript": "^5.4.5"
+		"typescript": "^5.4.5",
+		"workbox-window": "^7.0.0"
 	}
 }

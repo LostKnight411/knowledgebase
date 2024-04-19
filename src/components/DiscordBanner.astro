@@ -1,8 +1,10 @@
 ---
 import { Image } from 'astro:assets';
-import imgReference from "@assets/discord-mark-blue.svg"
+import imgReference from '@assets/discord-mark-blue.svg';
 
-const response = await fetch("https://discord.com/api/v9/invites/the-great-outdoors-345621611770282004?with_counts=true");
+const response = await fetch(
+	'https://discord.com/api/v9/invites/the-great-outdoors-345621611770282004?with_counts=true'
+);
 const data = await response.json();
 const { approximate_member_count: members } = data;
 
@@ -16,11 +18,11 @@ const { approximate_member_count: members } = data;
 			<h2>Join us on Discord</h2>
 		</a>
 		<p>
-			Chat with {members} members
+			Chat with {members} members <b>→</b>
 		</p>
 	</div>
 	<div style="">
-		<Image src={imgReference} alt="" width={180}/>
+		<Image src={imgReference} alt="" width={180} />
 	</div>
 </aside>
 
@@ -32,7 +34,7 @@ const { approximate_member_count: members } = data;
 		padding: 1rem;
 		border-radius: 0.5rem;
 		display: flex;
-		border: 1px solid #5865F2;
+		border: 1px solid #5865f2;
 		box-shadow: var(--sl-shadow-md);
 		overflow-y: hidden;
 		max-width: 235px;
