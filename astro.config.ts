@@ -20,7 +20,6 @@ export default defineConfig({
 			includeAssets: ['favicon.svg'],
 			workbox: {
 				globPatterns: ['**/!(404).{css,js,html,svg,png,ico,txt,json}'],
-				navigateFallback: '/',
 			},
 			experimental: {
 				directoryAndTrailingSlashHandler: true,
