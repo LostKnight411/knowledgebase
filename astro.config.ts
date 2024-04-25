@@ -81,11 +81,24 @@ export default defineConfig({
 			components: {
 				Head: './src/components/starlight/Head.astro',
 				PageSidebar: './src/components/starlight/PageSidebar.astro',
+				PageTitle: './src/components/starlight/PageTitle.astro',
 			},
 			sidebar: [
 				{
 					label: 'Home',
 					link: '/',
+				},
+				{
+					label: 'Clothing',
+					autogenerate: {
+						directory: 'clothing',
+					},
+				},
+				{
+					label: 'Miscellaneous',
+					autogenerate: {
+						directory: 'Articles',
+					},
 				},
 				{
 					label: 'Contributing',
