@@ -8,7 +8,7 @@ import AstroPWA from '@vite-pwa/astro';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://starlight-lovat.vercel.app/',
+	site: 'https://thegreatoutdoors.guide/',
 	prefetch: {
 		prefetchAll: true,
 		defaultStrategy: 'load',

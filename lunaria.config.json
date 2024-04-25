@@ -29,12 +29,12 @@
 		"favicon": {
 			"external": [
 				{
-					"link": "https://starlight-lovat.vercel.app/favicon.svg",
+					"link": "https://thegreatoutdoors.guide/favicon.svg",
 					"type": "image/svg"
 				}
 			]
 		},
-		"site": "https://starlight-lovat.vercel.app/lunaria",
+		"site": "https://thegreatoutdoors.guide/lunaria",
 		"title": "Translation Status | The Great Outdoors",
 		"description": "Localization status dashboard for TGO Knowledge Base"
 	},
