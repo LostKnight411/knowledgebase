@@ -11,7 +11,6 @@ export default defineConfig({
 	site: 'https://thegreatoutdoors.guide/',
 	prefetch: {
 		prefetchAll: true,
-		defaultStrategy: 'load',
 	},
 	integrations: [
 		AstroPWA({
@@ -22,14 +21,8 @@ export default defineConfig({
 				globPatterns: ['**/!(404).{css,js,html,svg,png,ico,txt,json}'],
 				runtimeCaching: [
 					{
-						urlPattern: 'https://thegreatoutdoors.guide/(.*)',
+						urlPattern: '.*',
 						handler: 'NetworkFirst',
-						options: {
-							cacheName: 'thegreatoutdoors',
-							cacheableResponse: {
-								statuses: [0, 200],
-							},
-						},
 					},
 				],
 			},
