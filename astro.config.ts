@@ -97,7 +97,7 @@ export default defineConfig({
 				{
 					label: 'Miscellaneous',
 					autogenerate: {
-						directory: 'Articles',
+						directory: 'misc',
 					},
 				},
 				{
