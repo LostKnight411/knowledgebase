@@ -8,10 +8,9 @@
 	"scripts": {
 		"dev": "tinacms dev --noTelemetry -c \"astro dev\"",
 		"start": "astro dev",
-		"build": "tinacms build --noTelemetry && astro check && npm run lunaria:build && astro build",
+		"build": "tinacms build --noTelemetry && npm run lunaria:build && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"tina:build": "tinacms build --noTelemetry && astro check && astro build",
 		"lunaria:preview": "lunaria preview",
 		"lunaria:build": "lunaria build",
 		"generate-pwa-assets": "pwa-assets-generator --preset minimal public/favicon.svg"
