@@ -20,6 +20,18 @@ export default defineConfig({
 			includeAssets: ['favicon.svg'],
 			workbox: {
 				globPatterns: ['**/!(404).{css,js,html,svg,png,ico,txt,json}'],
+				runtimeCaching: [
+					{
+						urlPattern: 'https://thegreatoutdoors.guide/(.*)',
+						handler: 'NetworkFirst',
+						options: {
+							cacheName: 'thegreatoutdoors',
+							cacheableResponse: {
+								statuses: [0, 200],
+							},
+						},
+					},
+				],
 			},
 			experimental: {
 				directoryAndTrailingSlashHandler: true,
