@@ -6,9 +6,10 @@
 	"repository": "https://github.com/tgoHQ/knowledgebase",
 	"bugs": "https://github.com/tgoHQ/knowledgebase/issues",
 	"scripts": {
-		"dev": "tinacms dev --noTelemetry -c \"astro dev\"",
+		"dev:tina": "tinacms dev --noTelemetry -c \"astro dev\"",
+		"dev": "astro dev",
 		"start": "astro dev",
-		"build": "tinacms build --noTelemetry && astro build && npm run lunaria:build",
+		"build": "astro build && npm run lunaria:build",
 		"preview": "astro preview",
 		"astro": "astro",
 		"lunaria:preview": "lunaria preview",
