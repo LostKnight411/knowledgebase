@@ -65,10 +65,13 @@ export default defineConfig({
 		// 		],
 		// 	},
 		// }),
-		
+
 		starlight({
-      plugins: [starlightImageZoomPlugin(), inoxToolsStarWarp()],
+			plugins: [starlightImageZoomPlugin(), inoxToolsStarWarp()],
 			title: 'The Great Outdoors',
+			editLink: {
+				baseUrl: 'https://github.com/tgoHQ/knowledgebase/tree/main',
+			},
 			logo: {
 				src: './src/assets/brand/wordmark.svg',
 				replacesTitle: true,
@@ -127,7 +130,7 @@ export default defineConfig({
 		}),
 		// embeds({
 		// 	services: {
-        // LinkPreview: true,
+		// LinkPreview: true,
 		// 		YouTube: true,
 		// 	},
 		// }),
