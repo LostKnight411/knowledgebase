@@ -95,33 +95,32 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Home',
-					link: '/',
-				},
-				{
-					label: 'Getting Started',
+					label: 'Basics',
 					autogenerate: {
-						directory: 'beginner',
+						directory: 'basics',
+					},
+					badge: {
+						text: 'Start Here',
+						variant: 'tip',
 					},
 				},
 				{
 					label: 'Clothing',
+					collapsed: true,
 					autogenerate: {
 						directory: 'clothing',
 					},
 				},
 				{
-					label: 'Miscellaneous',
+					label: 'Food and Water',
+					collapsed: true,
 					autogenerate: {
-						directory: 'misc',
+						directory: 'kitchen',
 					},
 				},
 				{
 					label: 'Contributing',
-					badge: {
-						text: 'New',
-						variant: 'note',
-					},
+					collapsed: true,
 					autogenerate: {
 						directory: 'contribute',
 					},
