@@ -105,17 +105,31 @@ export default defineConfig({
 					},
 				},
 				{
-					label: 'Clothing',
+					label: 'Gear Selection',
 					collapsed: true,
 					autogenerate: {
-						directory: 'clothing',
+						directory: 'gear',
 					},
 				},
 				{
-					label: 'Food and Water',
+					label: 'Essential Skills',
 					collapsed: true,
 					autogenerate: {
-						directory: 'kitchen',
+						directory: 'skills',
+					},
+				},
+				{
+					label: 'Trail Logistics',
+					collapsed: true,
+					autogenerate: {
+						directory: 'logistics',
+					},
+				},
+				{
+					label: 'Appendix',
+					collapsed: true,
+					autogenerate: {
+						directory: 'appendix',
 					},
 				},
 				{
@@ -123,6 +137,10 @@ export default defineConfig({
 					collapsed: true,
 					autogenerate: {
 						directory: 'contribute',
+					},
+					badge: {
+						text: 'Meta',
+						variant: 'note',
 					},
 				},
 			],
