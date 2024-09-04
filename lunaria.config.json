@@ -36,7 +36,7 @@
 		},
 		"site": "https://thegreatoutdoors.guide/lunaria",
 		"title": "Translation Status | The Great Outdoors",
-		"description": "Localization status dashboard for TGO Knowledge Base"
+		"description": "Localization status dashboard for thegreatoutdoors.guide"
 	},
 	"outDir": "./dist/translation"
 }

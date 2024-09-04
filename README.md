@@ -1,31 +1,7 @@
-# The Great Outdoors Knowledge Base
+# thegreatoutdoors.guide
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/small.svg)](https://starlight.astro.build)
 
 ![Discord](https://img.shields.io/discord/345621611770282004?style=for-the-badge&logo=discord&logoColor=white&label=Discord&labelColor=%23222&color=%23137c5a)
 
-
-## 🚀 Project Structure
-
-Starlight looks for `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
-
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
-
-Static assets, like favicons, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+For information on project structure, contributing guidelines, and project status, see the [our site's Contributing section](https://thegreatoutdoors.guide/contribute)
