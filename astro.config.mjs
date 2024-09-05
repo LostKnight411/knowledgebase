@@ -92,6 +92,7 @@ export default defineConfig({
 				Head: './src/components/starlight/Head.astro',
 				PageSidebar: './src/components/starlight/PageSidebar.astro',
 				PageTitle: './src/components/starlight/PageTitle.astro',
+				Footer: './src/components/starlight/Footer.astro',
 			},
 			sidebar: [
 				{
