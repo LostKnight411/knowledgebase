@@ -2,10 +2,8 @@
 title: Markup Reference
 description: A guide to the styling features and components you can use
 sidebar:
-  order: 1
+    order: 1
 ---
-
-
 
 ## Content
 
@@ -38,23 +36,17 @@ https://starlight.astro.build/guides/authoring-content/
 
 ### YouTube
 
-Include a YouTube link on its own line to embed a video player:
+Use the `YouTube` component to embed a YouTube video:
 
 ```mdx
-https://www.youtube.com/watch?v=RzL_L29cGmQ
+import { YouTube } from '@astro-community/astro-embed-youtube';
+
+<YouTube id="https://www.youtube.com/watch?v=Wb3UrJjAac4" />
 ```
 
-https://www.youtube.com/watch?v=RzL_L29cGmQ
+import { YouTube } from '@astro-community/astro-embed-youtube';
 
-### Link Previews
-
-Include any link on its own line to generate a link preview:
-
-```mdx
-https://discord.gg/the-great-outdoors-345621611770282004
-```
-
-https://discord.gg/the-great-outdoors-345621611770282004
+<YouTube id="https://www.youtube.com/watch?v=Wb3UrJjAac4" />
 
 ### Lighterpack Lists
 

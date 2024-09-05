@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import embeds from 'astro-embed/integration';
 import tailwind from '@astrojs/tailwind';
 import metaTags from 'astro-meta-tags';
 import starlightImageZoomPlugin from 'starlight-image-zoom';
@@ -147,12 +146,7 @@ export default defineConfig({
 				},
 			],
 		}),
-		// embeds({
-		// 	services: {
-		// LinkPreview: true,
-		// 		YouTube: true,
-		// 	},
-		// }),
+		
 		tailwind({
 			applyBaseStyles: false,
 		}),
