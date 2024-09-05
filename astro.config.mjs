@@ -67,6 +67,7 @@ export default defineConfig({
 		// }),
 
 		starlight({
+			lastUpdated: true,
 			plugins: [starlightImageZoomPlugin(), inoxToolsStarWarp()],
 			title: 'The Great Outdoors',
 			editLink: {
